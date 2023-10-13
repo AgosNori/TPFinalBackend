@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+
+<body>
+    <h1>Productos Creados</h1>
+    <ul>
+       
+            <% products.forEach(producto => { %>
+                <li>
+                    <strong> Id: </strong><%= producto.id_productos %><br>
+                    <strong> Nombre: </strong><%= producto.nom_producto %><br>
+                    <strong> Descripcion: </strong><%= producto.desc_producto %><br>
+                    <strong> Precio: </strong><%= producto.precio_producto %><br>
+                    <strong> Categoria: </strong><%= producto.id_categoria %><br>
+                    <strong> Calificación: </strong><%= producto.rating %><br>
+                </li>
+            <% }) %>
+            
+    </ul>
+</body>
+
+</html>
